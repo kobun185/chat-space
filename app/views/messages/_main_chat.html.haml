@@ -1,4 +1,39 @@
 .main-chat
   .main-chat__header
-  .main-chat__message-list
-  .main-chat__message-form
+    .top-items__left-box
+      %h2.top-items__left-box__group
+        test
+      %ul.top-items__left-box__member-list
+        Member:kohei
+
+
+    = link_to "#", class:"top-items__edit-btn" do
+      Edit
+
+
+  .main-chat_messages
+    .main-chat_message
+      .main-chat_message__member_name
+        kohei
+        %P.main-chat_message__date
+          2020/4/27(Mon) 17:00:00
+      %p.main-chat__text
+        はじめまして！
+
+    .main-chat_message
+      .main-chat_message__member_name
+        kohei
+        %P.main-chat_message__date
+          2020/4/27(Mon) 17:00:00
+      %p.main-chat__text
+        はじめまして！
+
+    .main-chat_message
+      .main-chat_message__member_name
+        kohei
+        %P.main-chat_message__date
+          2020/4/27(Mon) 17:00:00
+      %p.main-chat__text
+        はじめまして！
+
+

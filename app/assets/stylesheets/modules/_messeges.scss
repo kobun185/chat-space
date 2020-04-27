@@ -19,7 +19,7 @@
   color: #ffffff;
 }
 
-.top-items {
+.side-top_items {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -29,30 +29,40 @@
   }
 }
 
-.top-items__icon {
+.side-top_items__icon {
   display: flex;
   justify-content: flex-end;
   width: 60px;
 }
 
-.top-items__edit {
+.side-top_items__edit {
   color: #ffffff;
 }
 
-.top-items__cog {
+.side-top_items__cog {
   color: #ffffff;
   margin-left: 5px;
 }
 
 .side-bar__group-list {
   height: calc(100vh - 100px);
-  background-color: #2f3e51
+  background-color: #2f3e51;
+  padding: 20px 20px 0;
 }
 
 .side-items {
   color: #ffffff;
+  font-weight: bold;
   text-decoration: none;
+}
+.side-items__group {
   font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.side-items__message {
+  font-size: 11px;
+  margin-bottom: 40px;
 }
 
 .main-chat {
@@ -62,13 +72,70 @@
 
 .main-chat__header {
   height: 100px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
   background-color: #ffffff;
   border-bottom: solid 1px #eeeeee;
 }
-.main-chat__message-list {
+
+.top-items__left-box {
+  margin-top: 35px;
+}
+
+.top-items__left-box__group {
+  font-size: 20px;
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+.top-items__left-box__member-list {
+  font-size: 12px;
+  color: #999999;
+}
+
+.top-items__edit-btn {
+  height: 40px;
+  width: 72px;
+  line-height: 40px;
+  padding: 0 20px;
+  margin-top: 28px;
+  color: #38aef0;
+  border: solid 1px;
+  font-size: 16px;
+  position: absolute;
+  right: 40px;
+  text-decoration: none;
+}
+
+.main-chat_messages {
   height: calc(100vh - 190px);
+  padding: 35px 40px;
   background-color: #fafafa;
 }
+
+.main-chat_message {
+  padding-bottom: 46px;
+}
+
+.main-chat_message__member_name {
+  font-size: 16px;
+  color: #333333;
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.main-chat_message__date {
+  padding-left: 5px;
+  font-size: 12px;
+  color: #999999;
+}
+
+.main-chat__text {
+  font-size: 14px;
+  color: #434a54;
+}
+
 .main-chat__message-form {
   height: 90px;
   background-color: #d2d2d2;
