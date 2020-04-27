@@ -1,0 +1,17 @@
+.side-bar
+  .side-bar__header
+    .top-items
+      %p.top-items__name
+        name
+      %ul.top-items__icon
+        = link_to "#", class:"top-items__edit" do
+          = icon('far', 'edit')
+        = link_to "#", class:"top-items__cog" do
+          = icon('fas', 'cog')
+
+  .side-bar__group-list
+    = link_to "#", class:"side-items" do
+      %p.side-items__group
+        techcamp
+      %p.side-items__message
+        message
