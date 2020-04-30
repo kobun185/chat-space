@@ -1,0 +1,46 @@
+.main-chat
+  .main-chat__header
+    .top-items__left-box
+      %h2.top-items__left-box__group
+        test
+      %ul.top-items__left-box__member-list
+        Member:kohei
+
+
+    = link_to "#", class:"top-items__edit-btn" do
+      Edit
+
+
+  .main-chat_messages
+    .main-chat_message
+      .main-chat_message__member_name
+        kohei
+        %P.main-chat_message__date
+          2020/4/27(Mon) 17:00:00
+      %p.main-chat__text
+        はじめまして！
+
+    .main-chat_message
+      .main-chat_message__member_name
+        kohei
+        %P.main-chat_message__date
+          2020/4/27(Mon) 17:00:00
+      %p.main-chat__text
+        はじめまして！
+
+    .main-chat_message
+      .main-chat_message__member_name
+        kohei
+        %P.main-chat_message__date
+          2020/4/27(Mon) 17:00:00
+      %p.main-chat__text
+        はじめまして！
+
+  .message-form
+    %form.new_message
+      .form-box
+        %input{type: "text", class: "form-box__text", placeholder: "type a message"}
+        %label{class: "form-box__image"}
+          = icon('far', 'image')
+          %input{type: "file", class: "form-box__image--file"}
+      %input{type: "submit", value:"Send", class: "submit-btn"}
