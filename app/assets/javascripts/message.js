@@ -19,7 +19,7 @@ $(function(){
             <img src=${message.image} >
           </div>`
       }
-       else {
+      else {
         var html =
          `<div class="message">
             <div class="upper-message">
@@ -36,8 +36,8 @@ $(function(){
               </p>
             </div>
           </div>`
-        return html;
       };
+    return html;
   };
 
   $('#new_message').on('submit', function(e){
