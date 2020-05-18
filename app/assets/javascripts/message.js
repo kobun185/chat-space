@@ -58,6 +58,7 @@ $(function(){
       $('.main-chat_messages').append(html);
       $('.main-chat_messages').animate({ scrollTop: $('.main-chat_messages')[0].scrollHeight});
       $('form')[0].reset();
+      $('.submit-btn').prop('disabled', false);
     });
   });
 });
