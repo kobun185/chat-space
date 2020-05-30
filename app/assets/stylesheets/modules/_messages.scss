@@ -118,14 +118,17 @@
   overflow: scroll;
 }
 
-.main-chat_message {
+.message {
   padding-bottom: 46px;
+}
+
+.upper-message {
+  display: flex;
+  margin-bottom: 12px;
   
-  &__member_name {
+  &__user-name {
     font-size: 16px;
     color: #333333;
-    display: flex;
-    margin-bottom: 12px;
   }
 
   &__date {
